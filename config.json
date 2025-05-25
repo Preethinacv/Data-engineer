@@ -1,0 +1,7 @@
+{
+  "api_key": "YOUR_YOUTUBE_API_KEY",
+  "channel_id": "YOUR_CHANNEL_ID",
+  "bucket_name": "YOUR_GCS_BUCKET_NAME",
+  "dataset_name": "YOUR_BIGQUERY_DATASET",
+  "table_name": "YOUR_BIGQUERY_TABLE"
+}
