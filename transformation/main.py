@@ -3,7 +3,7 @@ from transform import transform_data
 import json, io
 from datetime import datetime
 def transform(request):
-    bucket_name = "YOUR_GCS_BUCKET_NAME"
+    bucket_name = "bucket_name"
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
 
