@@ -29,7 +29,6 @@ def youtube_extract():
     videos = fetch_videos(config["api_key"], config["channel_id"])
 
     if not videos:
-        print("⚠️ No videos fetched from the API.")
         return
 
     filename = f'youtube_raw_{datetime.utcnow().isoformat()}.json'
@@ -39,7 +38,7 @@ def youtube_extract():
     blob = bucket.blob(f'raw/{filename}')
     blob.upload_from_string(json.dumps(videos), content_type='application/json')
 
-    print(f"✅ Uploaded: raw/{filename} to bucket: {config['bucket_name']}")
+
 
 if __name__ == "__main__":
     youtube_extract()
