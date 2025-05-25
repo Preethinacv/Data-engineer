@@ -1,0 +1,16 @@
+# Ignore actual config with secrets
+config/config.json
+
+# Ignore your Google Cloud service account key
+*.json
+
+# Ignore Python virtual environments
+new_venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
